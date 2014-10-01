@@ -1,7 +1,6 @@
 # LifeAppV1
 =============
 * Main Menu
-
   * Scripts
     * Greetings
       * Professionals

@@ -71,10 +71,4 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
-	@Override
-	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		
-	}
 }

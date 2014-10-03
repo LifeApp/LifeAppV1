@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
@@ -28,6 +29,29 @@ public class MainActivity extends Activity implements OnClickListener {
 		hygieneButton.setOnClickListener(this);
 		emergencyButton.setOnClickListener(this);
 	}
+	
+	@Override
+	public void onClick(View theView)
+	{
+		switch(theView.getId())
+		{
+		case R.id.main_scripts_button:
+			//Open new view
+			break;
+		case R.id.main_time_button:
+			//Open new view
+			break;
+		case R.id.main_relationship_button:
+			//Open new view
+			break;
+		case R.id.main_hygiene_button:
+			//Open new view
+			break;
+		case R.id.main_emergency_button:
+			//Open new view
+			break;					
+		}
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,5 +70,11 @@ public class MainActivity extends Activity implements OnClickListener {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
 	}
 }

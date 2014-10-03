@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends Activity {
 
@@ -11,6 +12,13 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		//Button functionality
+		Button scriptsButton = (Button) findViewById(R.id.main_scripts_button);
+		Button timeButton = (Button) findViewById(R.id.main_time_button);
+		Button relationshipButton = (Button) findViewById(R.id.main_relationship_button);
+		Button hygieneButton = (Button) findViewById(R.id.main_hygiene_button);
+		Button emergencyButton = (Button) findViewById(R.id.main_emergency_button);
 	}
 
 	@Override

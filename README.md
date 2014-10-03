@@ -1,7 +1,6 @@
 # LifeAppV1
 =============
 ## [Issues to be claimed](https://github.com/LifeApp/LifeAppV1/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22+no%3Aassignee)
-=============
 ## Build Specs
 * Main Menu
   * Scripts

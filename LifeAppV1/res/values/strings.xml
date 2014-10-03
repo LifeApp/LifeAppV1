@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">LifeAppV1</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Life App</string>
+    <string name="action_settings">Log in?</string>
+    <string name="main_scripts_button">Scripts</string>
+    <string name="main_time_button">Time Management</string>
+    <string name="main_relationship_button">Relationship Maintenance</string>
+    <string name="main_hygiene_button">Hygiene</string>
+    <string name="main_emergency_button">Emergency Contacts</string>
 
 </resources>

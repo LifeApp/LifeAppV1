@@ -7,9 +7,9 @@
 ### [Issues to be claimed](https://github.com/LifeApp/LifeAppV1/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22+no%3Aassignee)
 ---
 
-### Build Specs
+### *Build Specs*
 * Main Menu
-  * Scripts
+  * **Scripts**
     * Greetings
       * Professionals
       * Family
@@ -30,7 +30,7 @@
       * Family
       * Friends
       * New People  
-  * Time Management
+  * **Time Management**
     * My Calendar
       * Daily View
       * Weekly View
@@ -40,12 +40,12 @@
       * New Task
       * Pending
       * Completed
-  * Relationship Management (Submenu: Explain Relationship Scale)
+  * **Relationship Management** (Submenu: Explain Relationship Scale)
     * Contacts
-  * Hygiene List
+  * **Hygiene List**
     * Male -- Premade list
     * Female -- Premade list
-  * Emergency Contact
+  * **Emergency Contacts**
     * Guardians
       * Name
       * Phone
@@ -76,7 +76,7 @@
       * Address
       * Email
       * Next Appointment
-  * Sign Up
+  * **Sign Up**
       * Name
       * Email
       * Gender

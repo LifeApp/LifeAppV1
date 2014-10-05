@@ -1,4 +1,4 @@
-# LifeAppV1
+## LifeAppV1
 ---
 
 ### [Progess so far](https://github.com/LifeApp/LifeAppV1/milestones)

@@ -22,6 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ScriptsMainMenu"
+            android:label="@string/title_activity_scripts_main_menu" >
+        </activity>
     </application>
 
 </manifest>

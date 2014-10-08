@@ -8,5 +8,7 @@
     <string name="main_relationship_button">Relationship Maintenance</string>
     <string name="main_hygiene_button">Hygiene</string>
     <string name="main_emergency_button">Emergency Contacts</string>
+    <string name="title_activity_scripts_main_menu">Scripts Main Menu</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

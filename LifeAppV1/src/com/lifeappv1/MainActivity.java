@@ -1,6 +1,7 @@
 package com.lifeappv1;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -37,9 +38,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		{
 		case R.id.main_scripts_button:
 			//Open new view
-			Button scripts = (Button) findViewById(R.id.main_scripts_button);
-			scripts.setBackgroundColor(R.drawable.simple_bg);
-			break;
+			Intent goToScripts = new Intent(this,ScriptsMainMenu.class);
+	        startActivity(goToScripts);
+	        break;
 		case R.id.main_time_button:
 			//Open new view
 			Button time = (Button) findViewById(R.id.main_time_button);

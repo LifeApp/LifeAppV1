@@ -48,9 +48,9 @@ public class MainActivity extends Activity implements OnClickListener {
 			break;
 		case R.id.main_relationship_button:
 			//Open new view
-			Button relationship = (Button) findViewById(R.id.main_relationship_button);
-			relationship.setBackgroundColor(R.drawable.simple_bg);
-			break;
+			Intent goToReletionship = new Intent(this,RelationshipMainMenu.class);
+	        startActivity(goToReletionship);
+	        break;
 		case R.id.main_hygiene_button:
 			//Open new view
 			Button hygiene = (Button) findViewById(R.id.main_hygiene_button);

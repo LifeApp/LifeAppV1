@@ -26,6 +26,10 @@
             android:name=".ScriptsMainMenu"
             android:label="@string/title_activity_scripts_main_menu" >
         </activity>
+        <activity
+            android:name=".RelationshipMainMenu"
+            android:label="@string/title_activity_relationship_main_menu" >
+        </activity>
     </application>
 
 </manifest>

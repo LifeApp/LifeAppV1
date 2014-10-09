@@ -13,5 +13,7 @@
     <string name="scripts_departures_button">Departures</string>
     <string name="scripts_disagreements_button">Disagreements</string>
     <string name="scripts_dosanddonts_button">Dos and donts</string>
+    <string name="title_activity_relationship_main_menu">Relationship Maintanence</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

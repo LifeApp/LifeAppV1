@@ -82,5 +82,5 @@
       * Password
  
 ---
-![Landscape](https://github.com/LifeApp/LifeAppV1/blob/master/Development%20Screenshots/LandscapeMain.png)
+![Landscape](https://github.com/LifeApp/LifeAppV1/blob/master/Development%20Screenshots/LandscapeMain2.png)
 

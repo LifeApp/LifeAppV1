@@ -83,4 +83,5 @@
  
 ---
 ![Landscape](https://github.com/LifeApp/LifeAppV1/blob/master/Development%20Screenshots/LandscapeMain2.png)
+![Portrait](https://github.com/LifeApp/LifeAppV1/blob/master/Development%20Screenshots/MainMenu.png)
 

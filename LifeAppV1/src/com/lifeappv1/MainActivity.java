@@ -1,6 +1,8 @@
 package com.lifeappv1;
 
-import android.support.v7.app.ActionBarActivity;
+
+import com.codinguser.android.contactpicker.ContactsPickerActivity;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,9 +11,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnClickListener {
-
+	private static final int GET_PHONE_NUMBER = 3007;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -49,8 +52,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			break;
 		case R.id.main_relationship_button:
 			//Open new view
-			Intent goToReletionship = new Intent(this,RelationshipMainMenu.class);
-	        startActivity(goToReletionship);
+			getContact();
 	        break;
 		case R.id.main_hygiene_button:
 			//Open new view
@@ -82,5 +84,29 @@ public class MainActivity extends Activity implements OnClickListener {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	public void getContact() {
+	    startActivityForResult(new Intent(this, ContactsPickerActivity.class), GET_PHONE_NUMBER);
+	}
+	// Listen for results.
+	@Override  
+	protected void onActivityResult(int requestCode, int resultCode, Intent data){
+	    // See which child activity is calling us back.
+	    switch (requestCode) {
+	        case GET_PHONE_NUMBER:
+	            // This is the standard resultCode that is sent back if the
+	            // activity crashed or didn't doesn't supply an explicit result.
+	            if (resultCode == RESULT_CANCELED){
+	                Toast.makeText(this, "No phone number found", Toast.LENGTH_SHORT).show();
+	            } 
+	            else {
+	                String phoneNumber = (String) data.getExtras().get(ContactsPickerActivity.KEY_PHONE_NUMBER);  
+	                //Do what you wish to do with phoneNumber e.g.
+	                Toast.makeText(this, "Phone number found: " + phoneNumber , Toast.LENGTH_SHORT).show();
+	            }
+	        default:
+	            break;
+	    }
 	}
 }

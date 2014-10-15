@@ -1,6 +1,6 @@
 package com.lifeappv1;
 
-import android.support.v7.app.ActionBarActivity;
+
 import android.app.Activity;
 import android.os.Bundle;
 

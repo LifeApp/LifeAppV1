@@ -15,5 +15,6 @@
     <string name="scripts_dosanddonts_button">Dos and donts</string>
     <string name="title_activity_relationship_main_menu">Relationship Maintanence</string>
     <string name="hello_world">Hello world!</string>
+    <string name="action_search">Search here</string>
 
 </resources>

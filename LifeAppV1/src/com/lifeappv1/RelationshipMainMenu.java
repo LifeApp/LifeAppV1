@@ -1,6 +1,5 @@
 package com.lifeappv1;
 
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;

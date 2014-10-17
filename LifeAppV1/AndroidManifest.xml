@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity 
-            android:name="com.codinguser.android.contactpicker.ContactsPickerActivity">
+            android:name=".ContactsPickerActivity">
         </activity>
         
         <activity

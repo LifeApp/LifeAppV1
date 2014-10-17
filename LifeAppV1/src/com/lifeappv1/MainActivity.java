@@ -1,8 +1,5 @@
 package com.lifeappv1;
 
-
-import com.codinguser.android.contactpicker.ContactsPickerActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

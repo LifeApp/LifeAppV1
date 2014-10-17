@@ -8,12 +8,14 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/life_project_white"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" 
@@ -23,6 +25,9 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.codinguser.android.contactpicker.ContactsPickerActivity">
         </activity>
         
         <activity
@@ -35,6 +40,7 @@
             android:screenOrientation="portrait"
             android:label="@string/title_activity_relationship_main_menu" >
         </activity>
+        
     </application>
 
 </manifest>

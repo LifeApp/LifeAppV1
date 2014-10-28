@@ -10,51 +10,7 @@
 	    
 	</FrameLayout>
 
-	<LinearLayout 
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-   	android:layout_height="fill_parent"
-   	android:background="@drawable/simple_bg"
-   	android:weightSum="5">
-
-   	 
-   	
-
-	    <Button
-	        android:id="@+id/main_scripts_button"
-	        android:layout_width="match_parent"
-	        android:layout_height="0dp"	
-	        android:text="@string/main_scripts_button" 
-	        android:layout_weight="1"/>
 	
-	    <Button
-	        android:id="@+id/main_time_button"
-	        android:layout_width="match_parent"
-	        android:layout_height="0dp"	
-	        android:text="@string/main_time_button" 
-	        android:layout_weight="1"/>
-	
-	    <Button
-	        android:id="@+id/main_relationship_button"
-	        android:layout_width="match_parent"
-	        android:layout_height="0dp"	
-	        android:text="@string/main_relationship_button" 
-	        android:layout_weight="1"/>
-	
-	    <Button
-	        android:id="@+id/main_hygiene_button"
-	        android:layout_width="match_parent"
-	        android:layout_height="0dp"	
-	        android:text="@string/main_hygiene_button" 
-	        android:layout_weight="1"/>
-	
-	    <Button
-	        android:id="@+id/main_emergency_button"
-	        android:layout_width="match_parent"
-	        android:layout_height="0dp"	
-	        android:text="@string/main_emergency_button" 
-	        android:layout_weight="1"/>
-</LinearLayout>
 	
     
 	<ListView

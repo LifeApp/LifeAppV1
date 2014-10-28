@@ -64,12 +64,13 @@ public class MainActivity extends Activity implements OnClickListener,
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 	
 		
-		// Button functionality
+/*		// Button functionality
 		Button scriptsButton = (Button) findViewById(R.id.main_scripts_button);
 		Button timeButton = (Button) findViewById(R.id.main_time_button);
 		Button relationshipButton = (Button) findViewById(R.id.main_relationship_button);
 		Button hygieneButton = (Button) findViewById(R.id.main_hygiene_button);
 		Button emergencyButton = (Button) findViewById(R.id.main_emergency_button);
+		
 
 		// Listeners for the buttons
 		scriptsButton.setOnClickListener(this);
@@ -77,6 +78,7 @@ public class MainActivity extends Activity implements OnClickListener,
 		relationshipButton.setOnClickListener(this);
 		hygieneButton.setOnClickListener(this);
 		emergencyButton.setOnClickListener(this);
+*/
 	}
 
 	@Override
@@ -86,7 +88,8 @@ public class MainActivity extends Activity implements OnClickListener,
 	}
 	@Override
 	public void onClick(View theView) {
-		switch (theView.getId()) {
+		/*
+		 * s; switch (theView.getId()) {
 		case R.id.main_scripts_button:
 			// Open new view
 			Intent goToScripts = new Intent(this, ScriptsMainMenu.class);
@@ -112,6 +115,7 @@ public class MainActivity extends Activity implements OnClickListener,
 			emergency.setBackgroundColor(R.drawable.simple_bg);
 			break;
 		}
+		*/
 	}
 	@Override
 	public void onConfigurationChanged(android.content.res.Configuration newConfig) {

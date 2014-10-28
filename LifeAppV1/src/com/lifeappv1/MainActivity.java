@@ -1,6 +1,8 @@
 package com.lifeappv1;
 
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -34,10 +36,12 @@ public class MainActivity extends Activity implements OnClickListener,
 		// Nav Drawer
 		drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
 		menu = getResources().getStringArray(R.array.menu);
+		
 		listView = (ListView) findViewById(R.id.drawerList);
 		listView.setAdapter(new ArrayAdapter<>(this,
 				android.R.layout.simple_list_item_1, menu));
 		listView.setOnItemClickListener(this);
+		
 		drawerListener = new ActionBarDrawerToggle(this, drawerLayout,
 				R.drawable.ic_drawer, R.string.drawer_open,
 				R.string.drawer_close) {
@@ -132,14 +136,15 @@ public class MainActivity extends Activity implements OnClickListener,
 		}
 		//forward click event to drawerListener (opens/closes nav drawer when clicked)
 		if(drawerListener.onOptionsItemSelected(item))
-				{
-					return true;
-				}
+		{
+			return true;
+		}
 				
 		return super.onOptionsItemSelected(item);
 	}
 
-	public void getContact() {
+	public void getContact() 
+	{
 		startActivityForResult(new Intent(this, ContactsPickerActivity.class),
 				GET_PHONE_NUMBER);
 	}
@@ -148,14 +153,18 @@ public class MainActivity extends Activity implements OnClickListener,
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// See which child activity is calling us back.
-		switch (requestCode) {
+		switch (requestCode) 
+		{
 		case GET_PHONE_NUMBER:
 			// This is the standard resultCode that is sent back if the
 			// activity crashed or didn't doesn't supply an explicit result.
-			if (resultCode == RESULT_CANCELED) {
+			if (resultCode == RESULT_CANCELED) 
+			{
 				Toast.makeText(this, "No phone number found",
 						Toast.LENGTH_SHORT).show();
-			} else {
+			} 
+			else 
+			{
 				String phoneNumber = (String) data.getExtras().get(
 						ContactsPickerActivity.KEY_PHONE_NUMBER);
 				// Do what you wish to do with phoneNumber e.g.
@@ -174,12 +183,36 @@ public class MainActivity extends Activity implements OnClickListener,
 		Toast.makeText(this, menu[position] + " was selected",
 				Toast.LENGTH_LONG).show();
 		selectItem(position);
+		
+		//String temp = menu[position];
+		
+		
 	}
 
 	private void selectItem(int position) {
 		// set menu item clicked to title
 		listView.setItemChecked(position, true);
 		setTitle(menu[position]);
+		
+    // Create a new fragment and specify the planet to show based on position
+	    Fragment fragment = new ScreenFragment();
+	    Bundle args = new Bundle();
+	    args.putInt(ScreenFragment.ARG_POSITION, position);
+	    fragment.setArguments(args);
+
+	    // Insert the fragment by replacing any existing fragment
+	    FragmentManager fragmentManager = getFragmentManager();
+	    fragmentManager.beginTransaction()
+	                   .replace(R.id.mainContent, fragment)
+	                   .commit();
+
+	    // Highlight the selected item, update the title, and close the drawer
+	    listView.setItemChecked(position, true);
+	    setTitle(menu[position]);
+	    drawerLayout.closeDrawer(listView);
+		
+	    
+
 	}
 
 	public void setTitle(String title) {

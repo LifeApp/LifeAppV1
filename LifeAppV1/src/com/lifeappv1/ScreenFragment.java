@@ -36,23 +36,24 @@ public void onStart() {
     // applied to the fragment at this point so we can safely call the method
     // below that sets the article text.
     Bundle args = getArguments();
-    if (args != null) {
+    /*if (args != null) {
         // Set article based on argument passed in
         updateScreenView(args.getInt(ARG_POSITION));
     } else if (mCurrentPosition != -1) {
         // Set article based on saved instance state defined during onCreateView
         updateScreenView(mCurrentPosition);
     }
+    */
 }
 
-public void updateScreenView(int position) {
-    TextView article = (TextView) getActivity().findViewById(R.id.article);
-    article.setText(Ipsum.Articles[position]);
+//public void updateScreenView(int position) {
+    //TextView article = (TextView) getActivity().findViewById(R.id.article);
+    //article.setText(Ipsum.Articles[position]);
     
-    FrameLayout screen = (FrameLayout) getActivity().findViewById(position);
-    screen.set
-    mCurrentPosition = position;
-}
+//    FrameLayout screen = (FrameLayout) getActivity().findViewById(R.id.mainContent);
+//    screen.setLayoutParams(params);
+//    mCurrentPosition = position;
+//}
 
 @Override
 public void onSaveInstanceState(Bundle outState) {
